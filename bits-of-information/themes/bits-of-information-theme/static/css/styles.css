@@ -1,9 +1,79 @@
+/* General Styles */
 body {
-  font-family: verdana;
-  font-size: 16px;
+  background-color: #1e1e1e; /* Dark background */
+  color: #d4d4d4; /* Light text */
+  font-family: 'Courier New', Courier, monospace; /* Monospaced font */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
 }
 
-h1 {
-  font-size: 20px;
-  color: #0088FF;
+#layout {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
+
+/* Sidebar */
+#sidebar {
+  width: 20%;
+  background-color: #252526; /* Slightly lighter than the background */
+  color: #d4d4d4; /* Light text */
+  border-right: 1px solid #3c3c3c; /* Divider */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#sidebar h2 {
+  margin-top: 0;
+  color: #569cd6; /* Accent color */
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sidebar ul li {
+  margin: 10px 0;
+}
+
+#sidebar ul li a {
+  text-decoration: none;
+  color: #dcdcaa; /* Yellow-green text for links */
+  cursor: pointer;
+}
+
+#sidebar ul li a:hover {
+  color: #9cdcfe; /* Light blue on hover */
+}
+
+/* Main Content */
+#main-content {
+  flex-grow: 1;
+  background-color: #1e1e1e; /* Same as body */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+#output {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Scrollbar Styling */
+#main-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+#main-content::-webkit-scrollbar-thumb {
+  background: #3c3c3c;
+  border-radius: 4px;
+}
+
+#main-content::-webkit-scrollbar-thumb:hover {
+  background: #5a5a5a;
+}
+
