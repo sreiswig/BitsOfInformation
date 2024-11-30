@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Test</title>
-  </head>
-  <body>
-    {{ .Content }}
-  </body>
-  <script type="text/javascript" src="js/hi.js"></script>
-</html>
+{{ partial "head.html"}}
+        {{ .Content }}
+{{ partial "footer.html"}}

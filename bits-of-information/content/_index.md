@@ -6,4 +6,6 @@ draft = true
 
 # Bits of Information
 
-Fun blog
+A Blog about programming
+
+Change
