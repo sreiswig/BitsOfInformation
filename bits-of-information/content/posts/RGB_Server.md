@@ -8,3 +8,5 @@ Run an optimization algorithm to find satisfiable configurations of components.
 Components:
  - StarTech 12U Adjustable 4 Post Open Frame Server Rack
  - SilverStone Technology RM44 4U Rackmount Server Chassis with Enhanced Liquid Cooling Capability
+ - AMD Radeon Pro W6800 32GB Graphic Card
+ - Sparkle Intel Arc A770 Titan OC Edition, 16GB GDDR6, ThermalSync, Torn Cooling, Axial Fan, Metal Backplate, SA770T-16GOC
