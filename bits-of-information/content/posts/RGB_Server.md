@@ -13,3 +13,6 @@ Components:
  - AMD Threadripper Pro WRX80
  - 256 GB ram
  - 1200 W power supply
+ - 2 x 4 TB SSD
+ - 2 X 8 TB HDD
+
