@@ -16,3 +16,5 @@ Components:
  - 2 x 4 TB SSD
  - 2 X 8 TB HDD
  - NixOS
+
+ Ran into issue with install not sure what's the cause yet
