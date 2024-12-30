@@ -16,3 +16,4 @@ Components:
  - 2 x 4 TB SSD
  - 2 X 8 TB HDD
  - NixOS
+ - All works
