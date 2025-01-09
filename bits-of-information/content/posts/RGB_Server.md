@@ -22,3 +22,4 @@ Components:
  - Setup LAN Network
  - Setup Remote Desktop on LAN only
  - Setup sycl dev environment
+ - devenv and direnv not working automatically using rdp
