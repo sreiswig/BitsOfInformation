@@ -1,29 +1,32 @@
 :root {
-    --background: #ffffff;
-    --text: #000000;
-    --accent: #3A6EA5;
+    --background: #F0F4FA; /* Light blue-gray background */
+    --text: #1E293B; /* Dark blue-gray for text */
+    --primary: #5277C3; /* Primary NixOS blue */
+    --accent: #8DA1D4; /* Light blue accent */
+    --dark-accent: #344F80; /* Dark blue for contrast */
 }
 
 [data-theme="dark"] {
-    --background: #121212;
-    --text: #EAEAEA;
-    --accent: #4A90E2;
+    --background: #121826; /* Very dark blue */
+    --text: #EAEAEA; /* Off-white */
+    --primary: #8DA1D4; /* Light NixOS blue for dark mode */
+    --accent: #5277C3; /* Primary blue */
+    --dark-accent: #344F80; /* Darker blue tones */
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #121212;
+        --background: #121826;
         --text: #EAEAEA;
+        --primary: #8DA1D4;
         --accent: #4A90E2;
+        --dark-accent: #344F80;
     }
 }
 
 body {
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    background-color: var(--background);
+    background: linear-gradient(135deg, var(--background) 0%, var(--accent) 100%);
     color: var(--text);
-    line-height: 1.6;
 }
 
 a {
@@ -36,3 +39,23 @@ a:hover {
     color: var(--accent-hover, #6099D6);
 }
 
+h1, h2, h3 {
+    color: var(--primary);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.2em;
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--text);
+    border: none;
+    border-radius: 4px;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--dark-accent);
+}
