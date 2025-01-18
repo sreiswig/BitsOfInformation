@@ -3,7 +3,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Posts | My New Hugo Site</title>
+<title>Bits of Information</title>
 
     <link rel="stylesheet" href="/css/main.css">
 
@@ -14,18 +14,12 @@
 </head>
 <body>
   <header>
-    <h1>My New Hugo Site</h1>
+    <h1>Bits of Information</h1>
 
   <nav>
     <ul>
     <li>
       <a href="/">Home</a>
-    </li>
-    <li>
-      <a aria-current="page" class="active" href="/posts/">Posts</a>
-    </li>
-    <li>
-      <a href="/tags/">Tags</a>
     </li>
     </ul>
   </nav>
@@ -40,19 +34,61 @@
     <h2><a href="/posts/sycl/">SyCL</a></h2>
     <h1 id="sycl-system-wide-compute-language">SyCL (System-wide Compute Language)</h1>
 <p>Setup</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
-</span></span><span style="display:flex;"><span>    std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;Hello World&#34;</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
+<p>SyCL hello world</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;sycl/sycl.hpp&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">hello_world</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">int</span>, <span style="color:#66d9ef">char</span><span style="color:#f92672">**</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">auto</span> device_selector <span style="color:#f92672">=</span> sycl<span style="color:#f92672">::</span>default_selector_v;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    sycl<span style="color:#f92672">::</span>queue queue(device_selector);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;Running on: &#34;</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&lt;&lt;</span> queue.get_device().get_info<span style="color:#f92672">&lt;</span>sycl<span style="color:#f92672">::</span>info<span style="color:#f92672">::</span>device<span style="color:#f92672">::</span>name<span style="color:#f92672">&gt;</span>()
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    queue.submit([<span style="color:#f92672">&amp;</span>] (sycl<span style="color:#f92672">::</span>handler<span style="color:#f92672">&amp;</span> cgh) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">auto</span> os <span style="color:#f92672">=</span> sycl<span style="color:#f92672">::</span>stream{<span style="color:#ae81ff">128</span>, <span style="color:#ae81ff">128</span>, cgh};
+</span></span><span style="display:flex;"><span>        cgh.single_task<span style="color:#f92672">&lt;</span>hello_world<span style="color:#f92672">&gt;</span>([<span style="color:#f92672">=</span>]() { 
+</span></span><span style="display:flex;"><span>            os <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;Hello World! (on device)</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>; 
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div>
   
     <h2><a href="/posts/rgb_server/"></a></h2>
     <h1 id="the-rgb-server-concept">The RGB Server Concept</h1>
-<p>The RGB Server is a development server containing a consumer GPU from AMD, NVIDIA, And Intel.</p>
+<p>The RGB Server is a development server containing a consumer GPU from AMD, NVIDIA, And Intel.
+Target is to be able to run Llama3.2 Vision 90B model this takes at minimum 64GB vram total.</p>
+<p>Run an optimization algorithm to find satisfiable configurations of components.</p>
+<p>Components:</p>
+<ul>
+<li>StarTech 12U Adjustable 4 Post Open Frame Server Rack</li>
+<li>SilverStone Technology RM51 5U Rackmount Server Chassis</li>
+<li>AMD Radeon Pro W6800 32GB Graphic Card | 250W Peak</li>
+<li>Sparkle Intel Arc A770 Titan OC Edition, 16GB GDDR6, ThermalSync, Torn Cooling, Axial Fan, Metal Backplate, SA770T-16GOC | 225W</li>
+<li>GeForce RTX 4060 Ti 16 GB | 165W</li>
+<li>AMD Ryzen Threadripper Pro 5955WX, 16 core, 32-Thread Desktop Processor | 280W</li>
+<li>256 GB ram</li>
+<li>1200 W power supply</li>
+<li>2 x 4 TB SSD</li>
+<li>2 X 8 TB HDD</li>
+<li>NixOS</li>
+<li>Ran into issue with install not sure what&rsquo;s the cause yet</li>
+<li>All works</li>
+<li>Setup LAN Network</li>
+<li>Setup Remote Desktop on LAN only</li>
+<li>Setup sycl dev environment</li>
+<li>devenv and direnv not working automatically using rdp</li>
+</ul>
   
 
   </main>
   <footer>
-    <p>Copyright 2024. All rights reserved.</p>
+    <p>Copyright 2025. All rights reserved.</p>
 
   </footer>
 </body>
