@@ -2,7 +2,3 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Bits of Information'
 
-[[menus.main]]
-name = "Home"
-pageRef = "/"
-weight = 10
