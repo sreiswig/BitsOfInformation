@@ -1,0 +1,10 @@
+<section class="post-cards">
+  {{ range first 5 .Site.RegularPages }}
+  <article class="post-card">
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <time datetime="{{ .Date.Format " 2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+    <p>{{ .Summary }}</p>
+    <a href="{{ .Permalink }}">Read More</a>
+  </article>
+  {{ end }}
+</section>
