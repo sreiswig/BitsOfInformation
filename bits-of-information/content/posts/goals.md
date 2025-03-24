@@ -5,3 +5,4 @@ Goals for 2025:
     Get better at communication
     Get better at Systems Design
     Make a simple typing centered game
+    Make an LLC
