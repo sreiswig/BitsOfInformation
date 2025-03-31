@@ -6,8 +6,15 @@
     <description>Recent content in Home on Bits of Information</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Interactive Globe</title>
+      <link>http://localhost:1313/posts/globe_test/</link>
+      <pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/globe_test/</guid>
+      <description>&lt;p&gt;Here is an interactive globe showing points of interest:&lt;/p&gt;&#xA;&#xA; &#xA; &#xA; &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;p&gt;Error: Could not load data file &#39;locations.json&#39; for the globe.&lt;/p&gt;&#xA;&#xA;&#xA;&lt;p&gt;You can add text before and after the globe.&lt;/p&gt;&#xA;&lt;p&gt;If you had another data file, say &lt;code&gt;data/cities.yaml&lt;/code&gt;, you could use:&lt;/p&gt;&#xA;&lt;p&gt;{{&amp;lt; globe data=&amp;ldquo;cities.yaml&amp;rdquo; height=&amp;ldquo;600px&amp;rdquo; &amp;gt;}}&lt;/p&gt;</description>
+    </item>
     <item>
       <title>SyCL</title>
       <link>http://localhost:1313/posts/sycl/</link>
@@ -28,6 +35,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/contact/</guid>
       <description>&lt;h1 id=&#34;contact&#34;&gt;Contact&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/goals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/goals/</guid>
+      <description>&lt;p&gt;Goals for 2025:&#xA;Write&#xA;Make an educational video&#xA;Get a new position / job&#xA;Get better at communication&#xA;Get better at Systems Design&#xA;Make a simple typing centered game&#xA;Make an LLC&lt;/p&gt;</description>
     </item>
     <item>
       <title>RGB Server</title>

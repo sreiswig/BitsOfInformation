@@ -1,0 +1,122 @@
+{{/* Shortcode parameters (optional, for future flexibility) */}}
+{{ $datafile := .Get "data" | default "locations.json" }} {{/* Default data file */}}
+{{ $elementId := printf "globeViz-%d" .Ordinal }} {{/* Unique ID for the globe container */}}
+{{ $height := .Get "height" | default "500px" }} {{/* Configurable height */}}
+
+{{/* Load the data from the specified file in the data directory */}}
+{{ $data := index site.Data (path.BaseName $datafile | path.Base | replaceRE `\.(json|yaml|toml)$` "") }}
+
+{{ if not $data }}
+<p>Error: Could not load data file '{{ $datafile }}' for the globe.</p>
+{{ else }}
+{{/* The HTML container for the globe */}}
+<div id="{{ $elementId }}" style="width: 100%; height: {{ $height }};"></div>
+
+{{/* Include necessary libraries via CDN */}}
+<script src="//unpkg.com/three"></script>
+<script src="//unpkg.com/globe.gl"></script>
+{{/* Or use Hugo Pipes if you installed via NPM */}}
+{{/*
+{{ $globeBundle := resources.Get "js/globe-bundle.js" | js.Build (dict "minify" hugo.IsProduction) | fingerprint }}
+<script src="{{ $globeBundle.RelPermalink }}" integrity="{{ $globeBundle.Data.Integrity }}" defer></script>
+*/}}
+
+{{/* JavaScript to initialize the globe and add data */}}
+<script>
+  // Wait for the DOM to be ready
+  document.addEventListener('DOMContentLoaded', function () {
+    // Get the data passed from Hugo (converted to JSON)
+    const globeData = {{$data | jsonify
+  }};
+
+  // Check if data is available
+  if (!globeData || !Array.isArray(globeData)) {
+    console.error('Globe data is missing or not an array for element #{{ $elementId }}');
+    return;
+  }
+
+  // Initialize the globe
+  const myGlobe = Globe()
+    (document.getElementById('{{ $elementId }}'))
+    // Basic configuration
+    .globeImageUrl('//unpkg.com/three-globe/example/img/earth-dark.jpg') // Or use your own texture
+    .bumpImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
+    .backgroundColor('rgba(0,0,0,0)') // Transparent background
+
+    // --- Add Data Here ---
+
+    // Example: Adding points based on the loaded data
+    .pointsData(globeData)
+    .pointLabel('name') // Property to use for labels on hover
+    .pointLat('lat')    // Property containing latitude
+    .pointLng('lng')    // Property containing longitude
+    .pointRadius(0.2)   // Fixed radius for points
+    .pointAltitude(d => d.value * 0.1 + 0.01) // Altitude based on 'value', ensure minimum altitude
+    .pointColor(() => 'rgba(255, 100, 100, 0.75)') // Color for points
+    .pointsTransitionDuration(1000); // Animation duration
+
+  // Example: Add arcs (if you had arc data)
+  // .arcsData(arcsData)
+  // .arcLabel('label')
+  // .arcStartLat('startLat')
+  // .arcStartLng('startLng')
+  // .arcEndLat('endLat')
+  // .arcEndLng('endLng')
+  // .arcDashLength(0.4)
+  // .arcDashGap(0.1)
+  // .arcDashAnimateTime(1500)
+  // .arcColor('color')
+  // .arcsTransitionDuration(1000);
+
+  // Example: Add polygons (if you had GeoJSON polygon data)
+  // .polygonsData(polygonGeoJsonData.features)
+  // .polygonCapColor(() => 'rgba(0, 200, 0, 0.4)')
+  // .polygonSideColor(() => 'rgba(0, 0, 0, 0.1)')
+  // .polygonLabel(({ properties: d }) => d.name)
+  // .polygonsTransitionDuration(1000);
+
+  // --- Interactivity ---
+  myGlobe.onPointHover(point => {
+    const elem = document.getElementById('{{ $elementId }}');
+    elem.style.cursor = point ? 'pointer' : null;
+  });
+
+  myGlobe.onPointClick(point => {
+    // Example: Fly to the clicked point
+    const TILT_OFFSET = 15; // Degrees tilt relative to point altitude
+    const ALTITUDE_OFFSET_KM = 1500; // Kilometers altitude relative to point altitude
+
+    myGlobe.pointOfView({
+      lat: point.lat,
+      lng: point.lng,
+      altitude: (point.value * 0.1 + 0.01) + ALTITUDE_OFFSET_KM / 6371 // Convert km to altitude units (approx earth radius)
+    }, 1500); // Transition duration in ms
+
+    // You could also display info about the point here
+    console.log('Clicked on:', point.name);
+    // alert(`You clicked on ${point.name}`);
+  });
+
+
+  // Optional: Auto-rotate
+  myGlobe.controls().autoRotate = true;
+  myGlobe.controls().autoRotateSpeed = 0.5;
+
+  // Optional: Adapt globe size on window resize
+  window.addEventListener('resize', () => {
+    const elem = document.getElementById('{{ $elementId }}');
+    if (elem) {
+      myGlobe.width(elem.offsetWidth);
+      myGlobe.height(elem.offsetHeight);
+    }
+  });
+
+  // Trigger initial size calculation
+  const elem = document.getElementById('{{ $elementId }}');
+  if (elem) {
+    myGlobe.width(elem.offsetWidth);
+    myGlobe.height(elem.offsetHeight);
+  }
+    });
+</script>
+{{ end }}
