@@ -10,17 +10,6 @@ header {
   text-align: center;
 }
 
-nav ul {
-  list-style: square;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
 .post-cards {
   display: flex;
   flex-wrap: wrap;
