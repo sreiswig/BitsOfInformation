@@ -8,7 +8,7 @@ date: 2024-12-03
 Setup
 
 SyCL hello world
-```c++
+```c++ {style=catppuccin-mocha}
 #include <sycl/sycl.hpp>
 
 class hello_world;
