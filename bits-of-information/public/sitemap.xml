@@ -22,6 +22,8 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/posts/life_truths/</loc>
+  </url><url>
     <loc>http://localhost:1313/posts/rgb_server/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
