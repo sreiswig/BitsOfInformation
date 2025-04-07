@@ -1,0 +1,54 @@
+/* --- Import the Medieval Font (Example using Google Fonts) --- */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+/* --- Style the specific list --- */
+.medieval-parchment-list {
+  /* --- Parchment Background --- */
+  background-image: url('/images/parchment.jpg');
+  /* Path relative to site root */
+  background-color: #f5eecf;
+  /* Fallback color similar to parchment */
+  background-size: cover;
+  /* Or 'contain', or a pixel value, or 'repeat' if seamless */
+  background-repeat: repeat;
+  /* Use 'repeat' if using a seamless tile */
+
+  /* --- Font Styling --- */
+  font-family: 'MedievalSharp', cursive;
+  /* Use your chosen font, add fallback */
+  color: #4a3c2a;
+  /* Dark brown text color instead of harsh black */
+  font-size: 1.1em;
+  /* Slightly larger font size, adjust as needed */
+
+  /* --- Spacing & Appearance --- */
+  padding: 20px 30px 20px 50px;
+  /* Add padding: top right bottom left */
+  margin: 20px 0;
+  /* Add some space above/below the list */
+  border: 1px solid #d3c4a3;
+  /* Optional subtle border */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  /* Optional subtle shadow */
+  list-style-type: none;
+  /* Optional: remove default bullets if desired */
+  /* Consider custom list markers if removing default ones */
+}
+
+/* Optional: Style list items if needed (e.g., spacing) */
+.medieval-parchment-list li {
+  margin-bottom: 10px;
+  /* Space between list items */
+  line-height: 1.6;
+  /* Adjust line spacing for readability */
+}
+
+/* Optional: Custom List Item Markers (if list-style-type: none) */
+.medieval-parchment-list li::before {
+  /* content: "📜";  Example using an emoji */
+  /* content: "✠"; Example using a symbol */
+  /* display: inline-block; */
+  /* width: 1.5em; */
+  /* margin-left: -1.5em; Adjust positioning */
+  /* color: #8a6d3b; */
+}
