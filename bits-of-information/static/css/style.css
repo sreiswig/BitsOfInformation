@@ -11,7 +11,7 @@ header {
 }
 
 .post-cards {
-  display: flex;
+  display: flexbox;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
@@ -21,7 +21,6 @@ header {
   border: 1px solid #ddd;
   margin: 10px;
   padding: 20px;
-  width: 300px;
 }
 
 .post-card h2 {

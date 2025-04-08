@@ -42,13 +42,3 @@
   line-height: 1.6;
   /* Adjust line spacing for readability */
 }
-
-/* Optional: Custom List Item Markers (if list-style-type: none) */
-.medieval-parchment-list li::before {
-  /* content: "📜";  Example using an emoji */
-  /* content: "✠"; Example using a symbol */
-  /* display: inline-block; */
-  /* width: 1.5em; */
-  /* margin-left: -1.5em; Adjust positioning */
-  /* color: #8a6d3b; */
-}
