@@ -6,4 +6,5 @@ Knowledge gained from experience.
 * People love numbers and metrics
 * The most interesting people I've met write and teach
 * Do the hard stuff first and when you've done enough do what makes you happy
+* Set goals and achieve them
 {{< /medieval-list >}}

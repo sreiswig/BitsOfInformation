@@ -13,6 +13,7 @@ header {
 .post-cards {
   display: flexbox;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   padding: 20px;
 }
