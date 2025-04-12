@@ -1,6 +1,6 @@
 Knowledge gained from experience.
 {{< medieval-list >}}
-* Money matters more than knowledge
+* Money and Prestige matters more than Knowledge
 * Do first, ask for permission later
 * Advocate for yourself
 * People love numbers and metrics
