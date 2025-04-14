@@ -6,8 +6,15 @@
     <description>Recent content in Home on Bits of Information</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is Reasoning?</title>
+      <link>http://localhost:1313/posts/what_is_reasoning/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/what_is_reasoning/</guid>
+      <description></description>
+    </item>
     <item>
       <title>My Interactive Globe</title>
       <link>http://localhost:1313/posts/globe_test/</link>
@@ -48,7 +55,7 @@
       <link>http://localhost:1313/posts/life_truths/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/life_truths/</guid>
-      <description>&lt;p&gt;Knowledge gained from experience.&#xA;&#xA;&lt;ul class=&#34;medieval-parchment-list&#34;&gt;&#xA;  &lt;ul&gt;&#xA;&lt;li&gt;Money matters more than knowledge&lt;/li&gt;&#xA;&lt;li&gt;Do first, ask for permission later&lt;/li&gt;&#xA;&lt;li&gt;Advocate for yourself&lt;/li&gt;&#xA;&lt;li&gt;People love numbers and metrics&lt;/li&gt;&#xA;&lt;li&gt;The most interesting people I&amp;rsquo;ve met write and teach&lt;/li&gt;&#xA;&lt;li&gt;Do the hard stuff first and when you&amp;rsquo;ve done enough, do what makes you happy&lt;/li&gt;&#xA;&lt;li&gt;Set goals and achieve them&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;  &lt;/ul:w&gt;&#xA;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Knowledge gained from experience.&#xA;&#xA;&lt;ul class=&#34;medieval-parchment-list&#34;&gt;&#xA;  &lt;ul&gt;&#xA;&lt;li&gt;Money and Prestige matters more than Knowledge&lt;/li&gt;&#xA;&lt;li&gt;Do first, ask for permission later&lt;/li&gt;&#xA;&lt;li&gt;Advocate for yourself&lt;/li&gt;&#xA;&lt;li&gt;People love numbers and metrics&lt;/li&gt;&#xA;&lt;li&gt;The most interesting people I&amp;rsquo;ve met write and teach&lt;/li&gt;&#xA;&lt;li&gt;Do the hard stuff first and when you&amp;rsquo;ve done enough, do what makes you happy&lt;/li&gt;&#xA;&lt;li&gt;Set goals and achieve them&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;  &lt;/ul:w&gt;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>RGB Server</title>
