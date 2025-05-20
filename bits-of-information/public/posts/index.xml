@@ -6,14 +6,21 @@
     <description>Recent content in Posts on Bits of Information</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>What is Reasoning?</title>
+      <title>What is an AI Agent?</title>
+      <link>http://localhost:1313/posts/what_is_an_ai_agent/</link>
+      <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/what_is_an_ai_agent/</guid>
+      <description>&lt;p&gt;A Computer can never be held accountable&#xA;Therefore a computer must never&#xA;make a management decision&lt;/p&gt;&#xA;&lt;p&gt;Is it just a fad?&#xA;Force LMM to use tool at appropriate time to achieve a longer goal?&#xA;Is an LMM the correct tool for the job?&#xA;What is planning and reasoning? What is the source of it?&#xA;LMMs are slow compared to purpose build ML.&#xA;What&amp;rsquo;s new in Reinforcement Learning?&#xA;Dynamic Flows&lt;/p&gt;&#xA;&lt;p&gt;Hypothesis, planning an reasoning came about after tool use and for predicting the manipulation of the environment around them.&#xA;Recent ML and RL have focused on a fixed environment.&#xA;LLMs operate in their chat or with a fixed number of functions they can call.&#xA;RL tests have focused on completing a specific game.&#xA;These models don&amp;rsquo;t manipulate the environment and augment their capabilities.&#xA;Language is a tool that Humans invented for the purpose of survival.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What is Planning?</title>
       <link>http://localhost:1313/posts/what_is_reasoning/</link>
       <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/what_is_reasoning/</guid>
-      <description></description>
+      <description>&lt;p&gt;Outline for now:&lt;/p&gt;&#xA;&lt;p&gt;Planning is done in the prefrontal cortex&#xA;There is a Hierarchy and it&amp;rsquo;s located in a mid-lateral region of the Prefrontal Cortex.&lt;/p&gt;&#xA;&lt;p&gt;The MIT Press Reader &amp;ldquo;A Tale About the Frontal Lobes as Told by a Neurologist&amp;rdquo; Mark D&amp;rsquo;Esposito&lt;/p&gt;&#xA;&lt;p&gt;Theory of Mind does that belong in planning?&lt;/p&gt;&#xA;&lt;p&gt;Is planning a discrete process as used in business and other organizational planning?&#xA;Discrete planning implies a Stochastic planning could exist as well&#xA;And Hybrid Discrete-Stochastic planning&lt;/p&gt;</description>
     </item>
     <item>
       <title>My Interactive Globe</title>
@@ -38,10 +45,24 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/posts/kaggle_rna_folding_2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/kaggle_rna_folding_2025/</guid>
+      <description>&lt;p&gt;Given a sequence predict 5 3d structures for that sequence.&#xA;Sequences are given as a string of A, C, G, U.&#xA;Some of the training sequences have other characters.&lt;/p&gt;&#xA;&lt;p&gt;Steps to begin.&lt;/p&gt;&#xA;&lt;p&gt;1 Custom Tokenizer:&#xA;Reasoning: Each of the letters have a different meaning from regular&#xA;Language usage that isn&amp;rsquo;t guranteed to be captured in LLM training.&#xA;Probably more efficient too.&#xA;Can skip this if using an LLM because it&amp;rsquo;s build to handle the tokens it was trained on.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/posts/life_truths/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/life_truths/</guid>
       <description>&lt;p&gt;Knowledge gained from experience.&#xA;&#xA;&lt;ul class=&#34;medieval-parchment-list&#34;&gt;&#xA;  &lt;ul&gt;&#xA;&lt;li&gt;Money and Prestige matters more than Knowledge&lt;/li&gt;&#xA;&lt;li&gt;Do first, ask for permission later&lt;/li&gt;&#xA;&lt;li&gt;Advocate for yourself&lt;/li&gt;&#xA;&lt;li&gt;People love numbers and metrics&lt;/li&gt;&#xA;&lt;li&gt;The most interesting people I&amp;rsquo;ve met write and teach&lt;/li&gt;&#xA;&lt;li&gt;Do the hard stuff first and when you&amp;rsquo;ve done enough, do what makes you happy&lt;/li&gt;&#xA;&lt;li&gt;Set goals and achieve them&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;  &lt;/ul:w&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/repairing_g600/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/repairing_g600/</guid>
+      <description>&lt;p&gt;The Logitech G600&amp;rsquo;s left click is going bad and the switch on the board needs to be replaced.&lt;/p&gt;&#xA;&lt;p&gt;Would also like to upgrade the mouse if possible without replacing the entire board.&lt;/p&gt;&#xA;&lt;p&gt;Change the usb-A cable to a usb-C female port.&#xA;Add a battery to power the mouse.&lt;/p&gt;&#xA;&lt;p&gt;Add a wireless transmitter and wireless reciever.&lt;/p&gt;</description>
     </item>
     <item>
       <title>RGB Server</title>
