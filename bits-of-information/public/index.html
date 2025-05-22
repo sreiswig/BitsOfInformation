@@ -23,29 +23,102 @@
   <h1 class="text-3xl font-bold mb-8">Latest Articles</h1>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<div class="font-sans antialiased bg-gray-100 min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
-  <div
-    class="max-w-sm w-full bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-    <div class="relative h-48 sm:h-56 overflow-hidden">
-      <img class="w-full h-full object-cover object-center"
-        src='https://placehold.co/600x400/A78BFA/ffffff?text=Article&#43;Image'
+<style>
+   
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     
+    background-color: #f5f5f5;
+     
+    padding: 16px;
+     
+  }
+
+  .card {
+    width: 100%;
+    max-width: 380px;
+     
+    border-radius: 8px;
+     
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+     
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     
+  }
+
+  .card .card-image img {
+    height: 200px;
+     
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .card .card-content h2 {
+    font-size: 1.5rem;
+     
+    font-weight: 600;
+     
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .card .card-content p {
+    font-size: 0.9rem;
+     
+    color: #616161;
+     
+    margin-bottom: 1rem;
+  }
+
+  .card .card-action {
+    text-align: right;
+    padding: 16px 24px;
+     
+  }
+
+  .card .card-action a {
+    color: #673ab7;
+     
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .card .card-action a:hover {
+    color: #512da8;
+     
+  }
+</style>
+
+<div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <img src='#ZgotmplZ'
         alt='What is an AI Agent?'
-        onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        onerror="this.onerror=null;this.src='https://placehold.co/600x400/9e9e9e/ffffff?text=Image+Not+Found';">
     </div>
-
-    <div class="p-6">
-      <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight">
-        <a href="http://localhost:1313/posts/what_is_an_ai_agent/" class="hover:text-purple-700 transition-colors duration-200">
+    <div class="card-content">
+      <h2>
+        <a href="http://localhost:1313/posts/what_is_an_ai_agent/" class="black-text">
           What is an AI Agent?
         </a>
       </h2>
-
-      <p class="text-gray-600 text-sm sm:text-base mb-4">
-        <p>A Computer can never be held accountable
+      <p><p>A Computer can never be held accountable
 Therefore a computer must never
 make a management decision</p>
 <p>Is it just a fad?
@@ -60,134 +133,326 @@ Recent ML and RL have focused on a fixed environment.
 LLMs operate in their chat or with a fixed number of functions they can call.
 RL tests have focused on completing a specific game.
 These models don&rsquo;t manipulate the environment and augment their capabilities.
-Language is a tool that Humans invented for the purpose of survival.</p>
-      </p>
-
-      <div class="text-right">
-        <a href="http://localhost:1313/posts/what_is_an_ai_agent/"
-          class="inline-flex items-center text-purple-600 hover:text-purple-800 font-semibold transition-colors duration-200 group">
-          Read More
-          <svg class="ml-1 w-4 h-4 transform transition-transform duration-200 group-hover:translate-x-1" fill="none"
-            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
+Language is a tool that Humans invented for the purpose of survival.</p></p>
+    </div>
+    <div class="card-action">
+      <a href="http://localhost:1313/posts/what_is_an_ai_agent/">Read More</a>
     </div>
   </div>
 </div>
 
     
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<div class="font-sans antialiased bg-gray-100 min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
-  <div
-    class="max-w-sm w-full bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-    <div class="relative h-48 sm:h-56 overflow-hidden">
-      <img class="w-full h-full object-cover object-center"
-        src='https://placehold.co/600x400/A78BFA/ffffff?text=Article&#43;Image'
+<style>
+   
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     
+    background-color: #f5f5f5;
+     
+    padding: 16px;
+     
+  }
+
+  .card {
+    width: 100%;
+    max-width: 380px;
+     
+    border-radius: 8px;
+     
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+     
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     
+  }
+
+  .card .card-image img {
+    height: 200px;
+     
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .card .card-content h2 {
+    font-size: 1.5rem;
+     
+    font-weight: 600;
+     
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .card .card-content p {
+    font-size: 0.9rem;
+     
+    color: #616161;
+     
+    margin-bottom: 1rem;
+  }
+
+  .card .card-action {
+    text-align: right;
+    padding: 16px 24px;
+     
+  }
+
+  .card .card-action a {
+    color: #673ab7;
+     
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .card .card-action a:hover {
+    color: #512da8;
+     
+  }
+</style>
+
+<div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <img src='#ZgotmplZ'
         alt='What is Planning?'
-        onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        onerror="this.onerror=null;this.src='https://placehold.co/600x400/9e9e9e/ffffff?text=Image+Not+Found';">
     </div>
-
-    <div class="p-6">
-      <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight">
-        <a href="http://localhost:1313/posts/what_is_reasoning/" class="hover:text-purple-700 transition-colors duration-200">
+    <div class="card-content">
+      <h2>
+        <a href="http://localhost:1313/posts/what_is_reasoning/" class="black-text">
           What is Planning?
         </a>
       </h2>
-
-      <p class="text-gray-600 text-sm sm:text-base mb-4">
-        <p>Outline for now:</p>
+      <p><p>Outline for now:</p>
 <p>Planning is done in the prefrontal cortex
 There is a Hierarchy and it&rsquo;s located in a mid-lateral region of the Prefrontal Cortex.</p>
 <p>The MIT Press Reader &ldquo;A Tale About the Frontal Lobes as Told by a Neurologist&rdquo; Mark D&rsquo;Esposito</p>
 <p>Theory of Mind does that belong in planning?</p>
 <p>Is planning a discrete process as used in business and other organizational planning?
 Discrete planning implies a Stochastic planning could exist as well
-And Hybrid Discrete-Stochastic planning</p>
-      </p>
-
-      <div class="text-right">
-        <a href="http://localhost:1313/posts/what_is_reasoning/"
-          class="inline-flex items-center text-purple-600 hover:text-purple-800 font-semibold transition-colors duration-200 group">
-          Read More
-          <svg class="ml-1 w-4 h-4 transform transition-transform duration-200 group-hover:translate-x-1" fill="none"
-            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
+And Hybrid Discrete-Stochastic planning</p></p>
+    </div>
+    <div class="card-action">
+      <a href="http://localhost:1313/posts/what_is_reasoning/">Read More</a>
     </div>
   </div>
 </div>
 
     
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<div class="font-sans antialiased bg-gray-100 min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
-  <div
-    class="max-w-sm w-full bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-    <div class="relative h-48 sm:h-56 overflow-hidden">
-      <img class="w-full h-full object-cover object-center"
-        src='https://placehold.co/600x400/A78BFA/ffffff?text=Article&#43;Image'
+<style>
+   
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     
+    background-color: #f5f5f5;
+     
+    padding: 16px;
+     
+  }
+
+  .card {
+    width: 100%;
+    max-width: 380px;
+     
+    border-radius: 8px;
+     
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+     
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     
+  }
+
+  .card .card-image img {
+    height: 200px;
+     
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .card .card-content h2 {
+    font-size: 1.5rem;
+     
+    font-weight: 600;
+     
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .card .card-content p {
+    font-size: 0.9rem;
+     
+    color: #616161;
+     
+    margin-bottom: 1rem;
+  }
+
+  .card .card-action {
+    text-align: right;
+    padding: 16px 24px;
+     
+  }
+
+  .card .card-action a {
+    color: #673ab7;
+     
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .card .card-action a:hover {
+    color: #512da8;
+     
+  }
+</style>
+
+<div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <img src='#ZgotmplZ'
         alt='My Interactive Globe'
-        onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        onerror="this.onerror=null;this.src='https://placehold.co/600x400/9e9e9e/ffffff?text=Image+Not+Found';">
     </div>
-
-    <div class="p-6">
-      <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight">
-        <a href="http://localhost:1313/posts/globe_test/" class="hover:text-purple-700 transition-colors duration-200">
+    <div class="card-content">
+      <h2>
+        <a href="http://localhost:1313/posts/globe_test/" class="black-text">
           My Interactive Globe
         </a>
       </h2>
-
-      <p class="text-gray-600 text-sm sm:text-base mb-4">
-        <p>Here is an interactive globe showing points of interest:</p>
-      </p>
-
-      <div class="text-right">
-        <a href="http://localhost:1313/posts/globe_test/"
-          class="inline-flex items-center text-purple-600 hover:text-purple-800 font-semibold transition-colors duration-200 group">
-          Read More
-          <svg class="ml-1 w-4 h-4 transform transition-transform duration-200 group-hover:translate-x-1" fill="none"
-            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
+      <p><p>Here is an interactive globe showing points of interest:</p></p>
+    </div>
+    <div class="card-action">
+      <a href="http://localhost:1313/posts/globe_test/">Read More</a>
     </div>
   </div>
 </div>
 
     
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<div class="font-sans antialiased bg-gray-100 min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
-  <div
-    class="max-w-sm w-full bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-    <div class="relative h-48 sm:h-56 overflow-hidden">
-      <img class="w-full h-full object-cover object-center"
-        src='https://placehold.co/600x400/A78BFA/ffffff?text=Article&#43;Image'
+<style>
+   
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     
+    background-color: #f5f5f5;
+     
+    padding: 16px;
+     
+  }
+
+  .card {
+    width: 100%;
+    max-width: 380px;
+     
+    border-radius: 8px;
+     
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+     
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     
+  }
+
+  .card .card-image img {
+    height: 200px;
+     
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .card .card-content h2 {
+    font-size: 1.5rem;
+     
+    font-weight: 600;
+     
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .card .card-content p {
+    font-size: 0.9rem;
+     
+    color: #616161;
+     
+    margin-bottom: 1rem;
+  }
+
+  .card .card-action {
+    text-align: right;
+    padding: 16px 24px;
+     
+  }
+
+  .card .card-action a {
+    color: #673ab7;
+     
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .card .card-action a:hover {
+    color: #512da8;
+     
+  }
+</style>
+
+<div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <img src='#ZgotmplZ'
         alt='SyCL'
-        onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        onerror="this.onerror=null;this.src='https://placehold.co/600x400/9e9e9e/ffffff?text=Image+Not+Found';">
     </div>
-
-    <div class="p-6">
-      <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight">
-        <a href="http://localhost:1313/posts/sycl/" class="hover:text-purple-700 transition-colors duration-200">
+    <div class="card-content">
+      <h2>
+        <a href="http://localhost:1313/posts/sycl/" class="black-text">
           SyCL
         </a>
       </h2>
-
-      <p class="text-gray-600 text-sm sm:text-base mb-4">
-        <h1 id="sycl-system-wide-compute-language">SyCL (System-wide Compute Language)</h1>
+      <p><h1 id="sycl-system-wide-compute-language">SyCL (System-wide Compute Language)</h1>
 <p>Setup</p>
 <p>SyCL hello world</p>
 <div class="highlight"><pre tabindex="0" style="color:#cdd6f4;background-color:#1e1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#6c7086;font-style:italic">#include</span> <span style="color:#6c7086;font-weight:bold;font-style:italic">&lt;sycl/sycl.hpp&gt;</span><span style="color:#6c7086;font-style:italic">
@@ -212,129 +477,321 @@ And Hybrid Discrete-Stochastic planning</p>
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#cba6f7">return</span> <span style="color:#fab387">0</span>;
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
-      </p>
-
-      <div class="text-right">
-        <a href="http://localhost:1313/posts/sycl/"
-          class="inline-flex items-center text-purple-600 hover:text-purple-800 font-semibold transition-colors duration-200 group">
-          Read More
-          <svg class="ml-1 w-4 h-4 transform transition-transform duration-200 group-hover:translate-x-1" fill="none"
-            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
+</span></span></code></pre></div></p>
+    </div>
+    <div class="card-action">
+      <a href="http://localhost:1313/posts/sycl/">Read More</a>
     </div>
   </div>
 </div>
 
     
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<div class="font-sans antialiased bg-gray-100 min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
-  <div
-    class="max-w-sm w-full bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-    <div class="relative h-48 sm:h-56 overflow-hidden">
-      <img class="w-full h-full object-cover object-center"
-        src='https://placehold.co/600x400/A78BFA/ffffff?text=Article&#43;Image'
+<style>
+   
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     
+    background-color: #f5f5f5;
+     
+    padding: 16px;
+     
+  }
+
+  .card {
+    width: 100%;
+    max-width: 380px;
+     
+    border-radius: 8px;
+     
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+     
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     
+  }
+
+  .card .card-image img {
+    height: 200px;
+     
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .card .card-content h2 {
+    font-size: 1.5rem;
+     
+    font-weight: 600;
+     
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .card .card-content p {
+    font-size: 0.9rem;
+     
+    color: #616161;
+     
+    margin-bottom: 1rem;
+  }
+
+  .card .card-action {
+    text-align: right;
+    padding: 16px 24px;
+     
+  }
+
+  .card .card-action a {
+    color: #673ab7;
+     
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .card .card-action a:hover {
+    color: #512da8;
+     
+  }
+</style>
+
+<div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <img src='#ZgotmplZ'
         alt=' Article Image'
-        onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        onerror="this.onerror=null;this.src='https://placehold.co/600x400/9e9e9e/ffffff?text=Image+Not+Found';">
     </div>
-
-    <div class="p-6">
-      <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight">
-        <a href="http://localhost:1313/about/" class="hover:text-purple-700 transition-colors duration-200">
+    <div class="card-content">
+      <h2>
+        <a href="http://localhost:1313/about/" class="black-text">
           Your Awesome Article Title Goes Here
         </a>
       </h2>
-
-      <p class="text-gray-600 text-sm sm:text-base mb-4">
-        <h1 id="about">About</h1>
+      <p><h1 id="about">About</h1>
 <p>Professional Cybersecurity Analyst and Software Engineer.
-Interested in ML Research specifically GNNs and methods that are alternatives to autoregressive LLMs.</p>
-      </p>
-
-      <div class="text-right">
-        <a href="http://localhost:1313/about/"
-          class="inline-flex items-center text-purple-600 hover:text-purple-800 font-semibold transition-colors duration-200 group">
-          Read More
-          <svg class="ml-1 w-4 h-4 transform transition-transform duration-200 group-hover:translate-x-1" fill="none"
-            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
+Interested in ML Research specifically GNNs and methods that are alternatives to autoregressive LLMs.</p></p>
+    </div>
+    <div class="card-action">
+      <a href="http://localhost:1313/about/">Read More</a>
     </div>
   </div>
 </div>
 
     
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<div class="font-sans antialiased bg-gray-100 min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
-  <div
-    class="max-w-sm w-full bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-    <div class="relative h-48 sm:h-56 overflow-hidden">
-      <img class="w-full h-full object-cover object-center"
-        src='https://placehold.co/600x400/A78BFA/ffffff?text=Article&#43;Image'
+<style>
+   
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     
+    background-color: #f5f5f5;
+     
+    padding: 16px;
+     
+  }
+
+  .card {
+    width: 100%;
+    max-width: 380px;
+     
+    border-radius: 8px;
+     
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+     
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     
+  }
+
+  .card .card-image img {
+    height: 200px;
+     
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .card .card-content h2 {
+    font-size: 1.5rem;
+     
+    font-weight: 600;
+     
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .card .card-content p {
+    font-size: 0.9rem;
+     
+    color: #616161;
+     
+    margin-bottom: 1rem;
+  }
+
+  .card .card-action {
+    text-align: right;
+    padding: 16px 24px;
+     
+  }
+
+  .card .card-action a {
+    color: #673ab7;
+     
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .card .card-action a:hover {
+    color: #512da8;
+     
+  }
+</style>
+
+<div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <img src='#ZgotmplZ'
         alt=' Article Image'
-        onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        onerror="this.onerror=null;this.src='https://placehold.co/600x400/9e9e9e/ffffff?text=Image+Not+Found';">
     </div>
-
-    <div class="p-6">
-      <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight">
-        <a href="http://localhost:1313/contact/" class="hover:text-purple-700 transition-colors duration-200">
+    <div class="card-content">
+      <h2>
+        <a href="http://localhost:1313/contact/" class="black-text">
           Your Awesome Article Title Goes Here
         </a>
       </h2>
-
-      <p class="text-gray-600 text-sm sm:text-base mb-4">
-        <h1 id="contact">Contact</h1>
-      </p>
-
-      <div class="text-right">
-        <a href="http://localhost:1313/contact/"
-          class="inline-flex items-center text-purple-600 hover:text-purple-800 font-semibold transition-colors duration-200 group">
-          Read More
-          <svg class="ml-1 w-4 h-4 transform transition-transform duration-200 group-hover:translate-x-1" fill="none"
-            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
+      <p><h1 id="contact">Contact</h1></p>
+    </div>
+    <div class="card-action">
+      <a href="http://localhost:1313/contact/">Read More</a>
     </div>
   </div>
 </div>
 
     
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<div class="font-sans antialiased bg-gray-100 min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
-  <div
-    class="max-w-sm w-full bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-    <div class="relative h-48 sm:h-56 overflow-hidden">
-      <img class="w-full h-full object-cover object-center"
-        src='https://placehold.co/600x400/A78BFA/ffffff?text=Article&#43;Image'
+<style>
+   
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     
+    background-color: #f5f5f5;
+     
+    padding: 16px;
+     
+  }
+
+  .card {
+    width: 100%;
+    max-width: 380px;
+     
+    border-radius: 8px;
+     
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+     
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     
+  }
+
+  .card .card-image img {
+    height: 200px;
+     
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .card .card-content h2 {
+    font-size: 1.5rem;
+     
+    font-weight: 600;
+     
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .card .card-content p {
+    font-size: 0.9rem;
+     
+    color: #616161;
+     
+    margin-bottom: 1rem;
+  }
+
+  .card .card-action {
+    text-align: right;
+    padding: 16px 24px;
+     
+  }
+
+  .card .card-action a {
+    color: #673ab7;
+     
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .card .card-action a:hover {
+    color: #512da8;
+     
+  }
+</style>
+
+<div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <img src='#ZgotmplZ'
         alt=' Article Image'
-        onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        onerror="this.onerror=null;this.src='https://placehold.co/600x400/9e9e9e/ffffff?text=Image+Not+Found';">
     </div>
-
-    <div class="p-6">
-      <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight">
-        <a href="http://localhost:1313/posts/goals/" class="hover:text-purple-700 transition-colors duration-200">
+    <div class="card-content">
+      <h2>
+        <a href="http://localhost:1313/posts/goals/" class="black-text">
           Your Awesome Article Title Goes Here
         </a>
       </h2>
-
-      <p class="text-gray-600 text-sm sm:text-base mb-4">
-        <p>Goals for 2025:</p>
+      <p><p>Goals for 2025:</p>
 <ul>
 <li>Write</li>
 <li>Make an educational video</li>
@@ -343,47 +800,111 @@ Interested in ML Research specifically GNNs and methods that are alternatives to
 <li>Get better at Systems Design</li>
 <li>Make a simple typing centered game</li>
 <li>Make an LLC</li>
-</ul>
-      </p>
-
-      <div class="text-right">
-        <a href="http://localhost:1313/posts/goals/"
-          class="inline-flex items-center text-purple-600 hover:text-purple-800 font-semibold transition-colors duration-200 group">
-          Read More
-          <svg class="ml-1 w-4 h-4 transform transition-transform duration-200 group-hover:translate-x-1" fill="none"
-            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
+</ul></p>
+    </div>
+    <div class="card-action">
+      <a href="http://localhost:1313/posts/goals/">Read More</a>
     </div>
   </div>
 </div>
 
     
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<div class="font-sans antialiased bg-gray-100 min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
-  <div
-    class="max-w-sm w-full bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-    <div class="relative h-48 sm:h-56 overflow-hidden">
-      <img class="w-full h-full object-cover object-center"
-        src='https://placehold.co/600x400/A78BFA/ffffff?text=Article&#43;Image'
+<style>
+   
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     
+    background-color: #f5f5f5;
+     
+    padding: 16px;
+     
+  }
+
+  .card {
+    width: 100%;
+    max-width: 380px;
+     
+    border-radius: 8px;
+     
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+     
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     
+  }
+
+  .card .card-image img {
+    height: 200px;
+     
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .card .card-content h2 {
+    font-size: 1.5rem;
+     
+    font-weight: 600;
+     
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .card .card-content p {
+    font-size: 0.9rem;
+     
+    color: #616161;
+     
+    margin-bottom: 1rem;
+  }
+
+  .card .card-action {
+    text-align: right;
+    padding: 16px 24px;
+     
+  }
+
+  .card .card-action a {
+    color: #673ab7;
+     
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .card .card-action a:hover {
+    color: #512da8;
+     
+  }
+</style>
+
+<div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <img src='#ZgotmplZ'
         alt=' Article Image'
-        onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        onerror="this.onerror=null;this.src='https://placehold.co/600x400/9e9e9e/ffffff?text=Image+Not+Found';">
     </div>
-
-    <div class="p-6">
-      <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight">
-        <a href="http://localhost:1313/posts/kaggle_rna_folding_2025/" class="hover:text-purple-700 transition-colors duration-200">
+    <div class="card-content">
+      <h2>
+        <a href="http://localhost:1313/posts/kaggle_rna_folding_2025/" class="black-text">
           Your Awesome Article Title Goes Here
         </a>
       </h2>
-
-      <p class="text-gray-600 text-sm sm:text-base mb-4">
-        <p>Given a sequence predict 5 3d structures for that sequence.
+      <p><p>Given a sequence predict 5 3d structures for that sequence.
 Sequences are given as a string of A, C, G, U.
 Some of the training sequences have other characters.</p>
 <p>Steps to begin.</p>
@@ -391,47 +912,111 @@ Some of the training sequences have other characters.</p>
 Reasoning: Each of the letters have a different meaning from regular
 Language usage that isn&rsquo;t guranteed to be captured in LLM training.
 Probably more efficient too.
-Can skip this if using an LLM because it&rsquo;s build to handle the tokens it was trained on.</p>
-      </p>
-
-      <div class="text-right">
-        <a href="http://localhost:1313/posts/kaggle_rna_folding_2025/"
-          class="inline-flex items-center text-purple-600 hover:text-purple-800 font-semibold transition-colors duration-200 group">
-          Read More
-          <svg class="ml-1 w-4 h-4 transform transition-transform duration-200 group-hover:translate-x-1" fill="none"
-            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
+Can skip this if using an LLM because it&rsquo;s build to handle the tokens it was trained on.</p></p>
+    </div>
+    <div class="card-action">
+      <a href="http://localhost:1313/posts/kaggle_rna_folding_2025/">Read More</a>
     </div>
   </div>
 </div>
 
     
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<div class="font-sans antialiased bg-gray-100 min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
-  <div
-    class="max-w-sm w-full bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-    <div class="relative h-48 sm:h-56 overflow-hidden">
-      <img class="w-full h-full object-cover object-center"
-        src='https://placehold.co/600x400/A78BFA/ffffff?text=Article&#43;Image'
+<style>
+   
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     
+    background-color: #f5f5f5;
+     
+    padding: 16px;
+     
+  }
+
+  .card {
+    width: 100%;
+    max-width: 380px;
+     
+    border-radius: 8px;
+     
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+     
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     
+  }
+
+  .card .card-image img {
+    height: 200px;
+     
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .card .card-content h2 {
+    font-size: 1.5rem;
+     
+    font-weight: 600;
+     
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .card .card-content p {
+    font-size: 0.9rem;
+     
+    color: #616161;
+     
+    margin-bottom: 1rem;
+  }
+
+  .card .card-action {
+    text-align: right;
+    padding: 16px 24px;
+     
+  }
+
+  .card .card-action a {
+    color: #673ab7;
+     
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .card .card-action a:hover {
+    color: #512da8;
+     
+  }
+</style>
+
+<div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <img src='#ZgotmplZ'
         alt=' Article Image'
-        onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        onerror="this.onerror=null;this.src='https://placehold.co/600x400/9e9e9e/ffffff?text=Image+Not+Found';">
     </div>
-
-    <div class="p-6">
-      <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight">
-        <a href="http://localhost:1313/posts/life_truths/" class="hover:text-purple-700 transition-colors duration-200">
+    <div class="card-content">
+      <h2>
+        <a href="http://localhost:1313/posts/life_truths/" class="black-text">
           Your Awesome Article Title Goes Here
         </a>
       </h2>
-
-      <p class="text-gray-600 text-sm sm:text-base mb-4">
-        <p>Knowledge gained from experience.
+      <p><p>Knowledge gained from experience.
 
 <ul class="medieval-parchment-list">
   <ul>
@@ -445,91 +1030,219 @@ Can skip this if using an LLM because it&rsquo;s build to handle the tokens it w
 </ul>
 
   </ul:w>
-</p>
-      </p>
-
-      <div class="text-right">
-        <a href="http://localhost:1313/posts/life_truths/"
-          class="inline-flex items-center text-purple-600 hover:text-purple-800 font-semibold transition-colors duration-200 group">
-          Read More
-          <svg class="ml-1 w-4 h-4 transform transition-transform duration-200 group-hover:translate-x-1" fill="none"
-            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
+</p></p>
+    </div>
+    <div class="card-action">
+      <a href="http://localhost:1313/posts/life_truths/">Read More</a>
     </div>
   </div>
 </div>
 
     
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<div class="font-sans antialiased bg-gray-100 min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
-  <div
-    class="max-w-sm w-full bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-    <div class="relative h-48 sm:h-56 overflow-hidden">
-      <img class="w-full h-full object-cover object-center"
-        src='https://placehold.co/600x400/A78BFA/ffffff?text=Article&#43;Image'
+<style>
+   
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     
+    background-color: #f5f5f5;
+     
+    padding: 16px;
+     
+  }
+
+  .card {
+    width: 100%;
+    max-width: 380px;
+     
+    border-radius: 8px;
+     
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+     
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     
+  }
+
+  .card .card-image img {
+    height: 200px;
+     
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .card .card-content h2 {
+    font-size: 1.5rem;
+     
+    font-weight: 600;
+     
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .card .card-content p {
+    font-size: 0.9rem;
+     
+    color: #616161;
+     
+    margin-bottom: 1rem;
+  }
+
+  .card .card-action {
+    text-align: right;
+    padding: 16px 24px;
+     
+  }
+
+  .card .card-action a {
+    color: #673ab7;
+     
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .card .card-action a:hover {
+    color: #512da8;
+     
+  }
+</style>
+
+<div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <img src='#ZgotmplZ'
         alt=' Article Image'
-        onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        onerror="this.onerror=null;this.src='https://placehold.co/600x400/9e9e9e/ffffff?text=Image+Not+Found';">
     </div>
-
-    <div class="p-6">
-      <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight">
-        <a href="http://localhost:1313/posts/repairing_g600/" class="hover:text-purple-700 transition-colors duration-200">
+    <div class="card-content">
+      <h2>
+        <a href="http://localhost:1313/posts/repairing_g600/" class="black-text">
           Your Awesome Article Title Goes Here
         </a>
       </h2>
-
-      <p class="text-gray-600 text-sm sm:text-base mb-4">
-        <p>The Logitech G600&rsquo;s left click is going bad and the switch on the board needs to be replaced.</p>
+      <p><p>The Logitech G600&rsquo;s left click is going bad and the switch on the board needs to be replaced.</p>
 <p>Would also like to upgrade the mouse if possible without replacing the entire board.</p>
 <p>Change the usb-A cable to a usb-C female port.
 Add a battery to power the mouse.</p>
-<p>Add a wireless transmitter and wireless reciever.</p>
-      </p>
-
-      <div class="text-right">
-        <a href="http://localhost:1313/posts/repairing_g600/"
-          class="inline-flex items-center text-purple-600 hover:text-purple-800 font-semibold transition-colors duration-200 group">
-          Read More
-          <svg class="ml-1 w-4 h-4 transform transition-transform duration-200 group-hover:translate-x-1" fill="none"
-            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
+<p>Add a wireless transmitter and wireless reciever.</p></p>
+    </div>
+    <div class="card-action">
+      <a href="http://localhost:1313/posts/repairing_g600/">Read More</a>
     </div>
   </div>
 </div>
 
     
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<div class="font-sans antialiased bg-gray-100 min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
-  <div
-    class="max-w-sm w-full bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-    <div class="relative h-48 sm:h-56 overflow-hidden">
-      <img class="w-full h-full object-cover object-center"
-        src='https://placehold.co/600x400/A78BFA/ffffff?text=Article&#43;Image'
+<style>
+   
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     
+    background-color: #f5f5f5;
+     
+    padding: 16px;
+     
+  }
+
+  .card {
+    width: 100%;
+    max-width: 380px;
+     
+    border-radius: 8px;
+     
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+     
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     
+  }
+
+  .card .card-image img {
+    height: 200px;
+     
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .card .card-content h2 {
+    font-size: 1.5rem;
+     
+    font-weight: 600;
+     
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .card .card-content p {
+    font-size: 0.9rem;
+     
+    color: #616161;
+     
+    margin-bottom: 1rem;
+  }
+
+  .card .card-action {
+    text-align: right;
+    padding: 16px 24px;
+     
+  }
+
+  .card .card-action a {
+    color: #673ab7;
+     
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .card .card-action a:hover {
+    color: #512da8;
+     
+  }
+</style>
+
+<div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <img src='#ZgotmplZ'
         alt='RGB Server'
-        onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        onerror="this.onerror=null;this.src='https://placehold.co/600x400/9e9e9e/ffffff?text=Image+Not+Found';">
     </div>
-
-    <div class="p-6">
-      <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight">
-        <a href="http://localhost:1313/posts/rgb_server/" class="hover:text-purple-700 transition-colors duration-200">
+    <div class="card-content">
+      <h2>
+        <a href="http://localhost:1313/posts/rgb_server/" class="black-text">
           RGB Server
         </a>
       </h2>
-
-      <p class="text-gray-600 text-sm sm:text-base mb-4">
-        <h1 id="the-rgb-server-concept">The RGB Server Concept</h1>
+      <p><h1 id="the-rgb-server-concept">The RGB Server Concept</h1>
 <p>The RGB Server is a development server containing a consumer GPU from AMD, NVIDIA, And Intel.
 Target is to be able to run Llama3.2 Vision 90B model this takes at minimum 64GB vram total.</p>
 <p>Run an optimization algorithm to find satisfiable configurations of components.</p>
@@ -552,19 +1265,10 @@ Target is to be able to run Llama3.2 Vision 90B model this takes at minimum 64GB
 <li>Setup Remote Desktop on LAN only</li>
 <li>Setup sycl dev environment</li>
 <li>devenv and direnv not working automatically using rdp</li>
-</ul>
-      </p>
-
-      <div class="text-right">
-        <a href="http://localhost:1313/posts/rgb_server/"
-          class="inline-flex items-center text-purple-600 hover:text-purple-800 font-semibold transition-colors duration-200 group">
-          Read More
-          <svg class="ml-1 w-4 h-4 transform transition-transform duration-200 group-hover:translate-x-1" fill="none"
-            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
+</ul></p>
+    </div>
+    <div class="card-action">
+      <a href="http://localhost:1313/posts/rgb_server/">Read More</a>
     </div>
   </div>
 </div>

@@ -1,38 +1,102 @@
-<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<div class="font-sans antialiased bg-gray-100 min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
-  <div
-    class="max-w-sm w-full bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-    <div class="relative h-48 sm:h-56 overflow-hidden">
-      <img class="w-full h-full object-cover object-center"
-        src='{{ .image | default "https://placehold.co/600x400/A78BFA/ffffff?text=Article+Image" }}'
+<style>
+  /* Custom styles to ensure Inter font is applied and card is centered */
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Ensure it takes full viewport height for centering */
+    background-color: #f5f5f5;
+    /* Light gray background */
+    padding: 16px;
+    /* Materialize default padding */
+  }
+
+  .card {
+    width: 100%;
+    max-width: 380px;
+    /* Equivalent to max-w-sm */
+    border-radius: 8px;
+    /* Materialize default is slightly rounded */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    /* Slight lift on hover */
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* Stronger shadow on hover */
+  }
+
+  .card .card-image img {
+    height: 200px;
+    /* Fixed height for image */
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .card .card-content h2 {
+    font-size: 1.5rem;
+    /* Equivalent to text-2xl */
+    font-weight: 600;
+    /* Semi-bold */
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .card .card-content p {
+    font-size: 0.9rem;
+    /* Equivalent to text-sm/base */
+    color: #616161;
+    /* Gray text */
+    margin-bottom: 1rem;
+  }
+
+  .card .card-action {
+    text-align: right;
+    padding: 16px 24px;
+    /* Default Materialize padding */
+  }
+
+  .card .card-action a {
+    color: #673ab7;
+    /* Deep Purple 500 */
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .card .card-action a:hover {
+    color: #512da8;
+    /* Deep Purple 700 */
+  }
+</style>
+
+<div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <img src='{{ .image | default " https://placehold.co/600x400/673ab7/ffffff?text=Article+Image" }}'
         alt='{{ .title | default " Article Image" }}'
-        onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found';">
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        onerror="this.onerror=null;this.src='https://placehold.co/600x400/9e9e9e/ffffff?text=Image+Not+Found';">
     </div>
-
-    <div class="p-6">
-      <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight">
-        <a href="{{ .link | default " #" }}" class="hover:text-purple-700 transition-colors duration-200">
+    <div class="card-content">
+      <h2>
+        <a href="{{ .link | default " #" }}" class="black-text">
           {{ .title | default "Your Awesome Article Title Goes Here" }}
         </a>
       </h2>
-
-      <p class="text-gray-600 text-sm sm:text-base mb-4">
-        {{ .description | default "This is a brief description or snippet of the article." }}
-      </p>
-
-      <div class="text-right">
-        <a href="{{ .link | default " #" }}"
-          class="inline-flex items-center text-purple-600 hover:text-purple-800 font-semibold transition-colors duration-200 group">
-          Read More
-          <svg class="ml-1 w-4 h-4 transform transition-transform duration-200 group-hover:translate-x-1" fill="none"
-            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
+      <p>{{ .description | default "This is a brief description or snippet of the article." }}</p>
+    </div>
+    <div class="card-action">
+      <a href="{{ .link | default " #" }}">Read More</a>
     </div>
   </div>
 </div>
