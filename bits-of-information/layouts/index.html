@@ -1,3 +1,15 @@
 {{ define "main" }}
-{{ partial "post-cards.html" . }}
+<div class="container mx-auto p-4">
+  <h1 class="text-3xl font-bold mb-8">Latest Articles</h1>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {{ range .Site.RegularPages }}
+    {{ partial "post-cards.html" (dict
+    "image" .Params.image
+    "title" .Title
+    "description" .Summary
+    "link" .Permalink
+    ) }}
+    {{ end }}
+  </div>
+</div>
 {{ end }}
