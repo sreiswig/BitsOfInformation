@@ -2,16 +2,4 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Bits of Information'
 
-[menus]
-  [[menus.main]]
-    name = 'Home'
-    pageRef = '/'
-    weight = 10
-  [[menus.main]]
-    name = 'About'
-    pageRef = '/about'
-    weight = 20
-  [[menus.main]]
-    name = 'Contact'
-    pageRef = '/contact'
-    weight = 30
+

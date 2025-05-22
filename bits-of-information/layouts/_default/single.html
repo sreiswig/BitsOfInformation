@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="section">
+  <div class="card">
+    <div class="card-content">
+      <h1 class="card-title">{{ .Title }}</h1>
+      <p class="grey-text text-darken-1">{{ .Date.Format "January 2, 2006" }}</p>
+      <div class="divider"></div>
+      <div class="flow-text"> {{ .Content }} </div>
+    </div>
+  </div>
+</div>
+{{ end }}
