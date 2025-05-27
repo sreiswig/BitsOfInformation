@@ -1,6 +1,6 @@
 +++
 date = ""
-draft = false
+draft = true
 title = "RGB Server"
 +++
 
@@ -8,8 +8,6 @@ title = "RGB Server"
 
 The RGB Server is a development server containing a consumer GPU from AMD, NVIDIA, And Intel.
 Target is to be able to run Llama3.2 Vision 90B model this takes at minimum 64GB vram total.
-
-Run an optimization algorithm to find satisfiable configurations of components.
 
 Components:
  - StarTech 12U Adjustable 4 Post Open Frame Server Rack
