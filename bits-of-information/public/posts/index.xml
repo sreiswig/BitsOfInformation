@@ -17,6 +17,13 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/posts/ideas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ideas/</guid>
+      <description>&lt;p&gt;The problem with modern design is that we strive for cheap and not nice.&#xA;Cheap is the ideal over nice.&#xA;We should instead strive to make the nice stuff affordable.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/posts/life_truths/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/life_truths/</guid>
@@ -31,17 +38,17 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/posts/text_2_3d_and_manufacturing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/text_2_3d_and_manufacturing/</guid>
+      <description>&lt;p&gt;The idea is to use an llm to create 3d models while being aware of how to manufacture the entire design as well as the individual parts&lt;/p&gt;&#xA;&lt;p&gt;Description to openUSD format, use a tool to convert openUSD format to a set of print instructions.&#xA;LangGraph Agent to create the Automation, offload to code as needed.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/posts/yale_geophysical_waveform_inversion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/yale_geophysical_waveform_inversion/</guid>
-      <description>&lt;p&gt;What is Full Waveform Inversion?&lt;/p&gt;&#xA;&lt;p&gt;pdf on full waveform inversion &lt;a href=&#34;https://library.seg.org/doi/epdf/10.1190/1.9781560803027.entry6&#34;&gt;https://library.seg.org/doi/epdf/10.1190/1.9781560803027.entry6&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s visualize it.&#xA;Make a waveform guessing game.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>RGB Server</title>
-      <link>http://localhost:1313/posts/rgb_server/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/rgb_server/</guid>
-      <description>&lt;h1 id=&#34;the-rgb-server-concept&#34;&gt;The RGB Server Concept&lt;/h1&gt;&#xA;&lt;p&gt;The RGB Server is a development server containing a consumer GPU from AMD, NVIDIA, And Intel.&#xA;Target is to be able to run Llama3.2 Vision 90B model this takes at minimum 64GB vram total.&lt;/p&gt;&#xA;&lt;p&gt;Run an optimization algorithm to find satisfiable configurations of components.&lt;/p&gt;&#xA;&lt;p&gt;Components:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;StarTech 12U Adjustable 4 Post Open Frame Server Rack&lt;/li&gt;&#xA;&lt;li&gt;SilverStone Technology RM51 5U Rackmount Server Chassis&lt;/li&gt;&#xA;&lt;li&gt;AMD Radeon Pro W6800 32GB Graphic Card | 250W Peak&lt;/li&gt;&#xA;&lt;li&gt;Sparkle Intel Arc A770 Titan OC Edition, 16GB GDDR6, ThermalSync, Torn Cooling, Axial Fan, Metal Backplate, SA770T-16GOC | 225W&lt;/li&gt;&#xA;&lt;li&gt;GeForce RTX 4060 Ti 16 GB | 165W&lt;/li&gt;&#xA;&lt;li&gt;AMD Ryzen Threadripper Pro 5955WX, 16 core, 32-Thread Desktop Processor | 280W&lt;/li&gt;&#xA;&lt;li&gt;256 GB ram&lt;/li&gt;&#xA;&lt;li&gt;1200 W power supply&lt;/li&gt;&#xA;&lt;li&gt;2 x 4 TB SSD&lt;/li&gt;&#xA;&lt;li&gt;2 X 8 TB HDD&lt;/li&gt;&#xA;&lt;li&gt;NixOS&lt;/li&gt;&#xA;&lt;li&gt;Ran into issue with install not sure what&amp;rsquo;s the cause yet&lt;/li&gt;&#xA;&lt;li&gt;All works&lt;/li&gt;&#xA;&lt;li&gt;Setup LAN Network&lt;/li&gt;&#xA;&lt;li&gt;Setup Remote Desktop on LAN only&lt;/li&gt;&#xA;&lt;li&gt;Setup sycl dev environment&lt;/li&gt;&#xA;&lt;li&gt;devenv and direnv not working automatically using rdp&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;What is Full Waveform Inversion?&lt;/p&gt;&#xA;&lt;p&gt;pdf on full waveform inversion &lt;a href=&#34;https://library.seg.org/doi/epdf/10.1190/1.9781560803027.entry6&#34;&gt;https://library.seg.org/doi/epdf/10.1190/1.9781560803027.entry6&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Understanding the task is the first step so let&amp;rsquo;s visualize it.&#xA;Follow tutorial jupyter notebook&lt;/p&gt;&#xA;&lt;p&gt;Master the subject by making a waveform guessing game.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
