@@ -5,5 +5,4 @@ pdf on full waveform inversion https://library.seg.org/doi/epdf/10.1190/1.978156
 Understanding the task is the first step so let's visualize it.
 Follow tutorial jupyter notebook
 
-Master the subject by making a waveform guessing game.
 
