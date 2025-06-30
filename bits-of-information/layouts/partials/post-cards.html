@@ -8,18 +8,6 @@
     font-family: 'Inter', sans-serif;
   }
 
-  .card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    /* Ensure it takes full viewport height for centering */
-    background-color: #f5f5f5;
-    /* Light gray background */
-    padding: 16px;
-    /* Materialize default padding */
-  }
-
   .card {
     width: 100%;
     max-width: 380px;
@@ -63,7 +51,6 @@
 
   .card .card-action {
     text-align: right;
-    padding: 16px 24px;
     /* Default Materialize padding */
   }
 
@@ -80,23 +67,16 @@
   }
 </style>
 
-<div class="card-container">
-  <div class="card">
-    <div class="card-image">
-      <img src='{{ .image | default " https://placehold.co/600x400/673ab7/ffffff?text=Article+Image" }}'
-        alt='{{ .title | default " Article Image" }}'
-        onerror="this.onerror=null;this.src='https://placehold.co/600x400/9e9e9e/ffffff?text=Image+Not+Found';">
-    </div>
-    <div class="card-content">
-      <h2>
-        <a href="{{ .link | default " #" }}" class="black-text">
-          {{ .title | default "Your Awesome Article Title Goes Here" }}
-        </a>
-      </h2>
-      <p>{{ .description | default "This is a brief description or snippet of the article." }}</p>
-    </div>
-    <div class="card-action">
-      <a href="{{ .link | default " #" }}">Read More</a>
-    </div>
+<div class="card">
+  <div class="card-content">
+    <h2>
+      <a href="{{ .link | default " #" }}" class="black-text">
+        {{ .title | default "Your Awesome Article Title Goes Here" }}
+      </a>
+    </h2>
+    <p>{{ .description | default "This is a brief description or snippet of the article." }}</p>
+  </div>
+  <div class="card-action">
+    <a href="{{ .link | default " #" }}">Read More</a>
   </div>
 </div>
