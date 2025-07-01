@@ -3,7 +3,7 @@
   <h1 class="center-align">{{ .Title }}</h1>
   <div class="row">
     {{ range .Pages }}
-    <div class="col s12 m6 l4"> {{ partial "post-cards.html" (dict
+    <div> {{ partial "post-cards.html" (dict
       "image" .Params.image
       "title" .Title
       "description" .Summary
