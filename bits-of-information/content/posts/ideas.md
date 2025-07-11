@@ -1,1 +1,2 @@
-The problem with LLMs with regards to AGI is the modality, text is not "real". We should use vision, audio and other physical modalities as the primary input and learn text/language through experience.
+Your job matters a lot in your life.
+If you take one that causes anxiety and depression it will ruin you.
